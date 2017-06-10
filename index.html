@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <title>VR Home</title>
     <script src="//cdn.rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js"></script>
-
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.3/dist/aframe-extras.min.js"></script>
 </head>
 <body>
     <a-scene>
-        <!--<a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>-->
-        <!--<a-box position="-1 0.5 -3" rotation="0 45 0" width="1" height="1" depth="1" color="#4CC3D9"></a-box>-->
-        <!--<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>-->
-        <!--<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>-->
-        <!--<a-sky color="#ECECEC"></a-sky>-->
+        <a-entity camera="userHeight: 1.6" position="13.142 1.800 2.917" rotation="-0.573 -679.184 0.000" universal-controls="movementAcceleration:20" kinematic-body="radius:0.25"></a-entity>
         <a-collada-model src="model/testhome.dae" scale="0.01 0.01 0.01"></a-collada-model>
-    </a-scene>
+        <!--<a-entity camera="userHeight: 1.6" universal-controls="movementAcceleration:20" kinematic-body="radius:0.25"></a-entity>-->
+        <a-sky color="#0000FF"></a-sky>
+        <a-plane position="5.802 0.022 0.669" rotation="-90.000 0 0" width="40" height="40" visible="false" static-body></a-plane>
 </body>
 </html>
